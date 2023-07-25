@@ -69,8 +69,7 @@ const arrFilter = (arr) => {
   return finalArr;
 };
 
-console.log(
-  `5. ${arrFilter([
+console.log(`5.`,arrFilter([
     5,
     "Limit",
     12,
@@ -81,8 +80,7 @@ console.log(
     [2, 4, 3, "33", "a", "text"],
     "strong",
     "broun",
-  ])}`
-);
+  ]));
 // --------------------------------------------------
 
 // ## 6. Function with operands a,b and operator op depending on case
