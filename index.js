@@ -243,3 +243,34 @@
 //     return workersSalary;
 //   }
 // }
+
+//-----------------------------------------------------------------
+
+// function upperCase(str) {
+//   const upperCaseRegExp = /[A-Z]/;
+//   return upperCaseRegExp.test(str[0])
+//     ? "String's starts with uppercase character"
+//     : "String's not starts with uppercase character";
+// }
+
+//-----------------------------------------------------------------
+
+// function validateEmail(email) {
+//   var re = /\S+@\S+\.\S+/;
+//   return re.test(email);
+// }
+
+//-----------------------------------------------------------------
+
+// function checkLogin(login) {
+//   const loginRegex = /^(?![0-9])([a-zA-Z0-9.]){2,10}$/;
+//   const numbersRegex = /[+-]?([0-9]*[.])?[0-9]+/g;
+//   const result = { isValid: "", numbers: [] };
+//   result.isValid = loginRegex.test(login);
+//   if (login.match(numbersRegex) != null) {
+//     result.numbers = login.match(numbersRegex);
+//   }
+
+//   return result;
+// }
+

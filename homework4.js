@@ -127,7 +127,7 @@
 //   ];
 
 //   if (month < 1 || month > 12) {
-//     return new MonthExeption("Incorrect month number");
+//     throw new MonthExeption("Incorrect month number");
 //   } else return monthNames[month - 1];
 // }
 // console.log(showMonthName(13));
@@ -155,4 +155,4 @@
 //   return usersId;
 // };
 
-// console.log(showUsers([7, -12, 44, 22]));
+// console.log(showUsers([7, -12, 44, -50, 22]));
