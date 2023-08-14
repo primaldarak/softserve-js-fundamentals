@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }, 2000);
   //   const moveTo = setTimeout(() => {
   //     openTab.moveTo(200, 200);
-  //   }, 2000);
+  //   }, 4000);
   //   const close = setTimeout(() => {
   //     openTab.close();
-  //   }, 2000);
+  //   }, 6000);
   //------------------------------------------------------
   //## Task 2
   // const btn = document.querySelector("div.task-2 div button");
