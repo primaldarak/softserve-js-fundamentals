@@ -274,3 +274,120 @@
 //   return result;
 // }
 
+//-----------------------------------------------------------------
+
+// const names = { first: "Tom", second: "Sam", third: "Ray" };
+
+// let { first: f = "Name №1", second: s = "Name №2", third: t = "Name №3" } = names;
+
+//-----------------------------------------------------------------
+
+// const data = { names: ["Sam", "Tom", "Ray", "Bob"], ages: [20, 24, 22, 26] };
+
+// let {
+//   names: [name1, name2, name3, name4],
+//   ages: [age1, age2, age3, age4],
+// } = data;
+
+//-----------------------------------------------------------------
+
+// function mul(...nums) {
+//   const mul = nums.filter((e) => typeof e === "number");
+//   return mul.length > 0 ? mul.reduce((a, b) => a * b) : 0;
+// }
+
+//-----------------------------------------------------------------
+
+// let server = {
+//   data: 0,
+//   convertToString: function (callback) {
+//     callback(() => this.data + "");
+//   },
+// };
+// let client = {
+//   server: server,
+//   result: "",
+//   calc: function (data) {
+//     this.server.data = data;
+//     this.server.convertToString(this.notification());
+//   },
+//   notification: function () {
+//     return (callback) => {
+//       this.result = callback();
+//     };
+//   },
+// };
+
+//-----------------------------------------------------------------
+
+// function mapBuilder(arr1, arr2) {
+//   const map = new Map();
+//   arr1.forEach((element, index) => {
+//     map.set(element, arr2[index]);
+//   });
+//   return map;
+// }
+
+//-----------------------------------------------------------------
+
+// function getPromise(message, delay) {
+//   const promise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       resolve(message);
+//     }, delay);
+//   });
+//   return promise;
+// }
+
+//-----------------------------------------------------------------
+
+// function calcArrProduct(arr) {
+//   const promise = new Promise(function (resolve, reject) {
+//     if (arr.every((e) => typeof e == "number")) {
+//       const product = arr.reduce((acc, e) => acc * e);
+//       resolve(product);
+//     } else {
+//       reject("Error! Incorrect array!");
+//     }
+//   });
+//   return promise;
+// }
+
+//-----------------------------------------------------------------
+
+// new Promise(function (resolve, reject) {
+//   const number = prompt("Enter number");
+//   if (typeof number !== "number" || number.length == 0) {
+//     reject();
+//   } else {
+//     resolve(number);
+//   }
+// })
+//   .catch(function (error) {
+//     return new Promise(function (resolve, reject) {
+//       let number;
+//       while (typeof number !== "number") {
+//         number = prompt("Enter number");
+//       }
+//       resolve(number);
+//     });
+//   })
+//   .then(function (result) {
+//     console.log(result);
+//   });
+
+//-----------------------------------------------------------------
+
+// const delay = (i, time) => new Promise((resolve) => setTimeout(() => resolve(i), time));
+// delays.forEach((d, i) => {
+//   delay(i, d).then((result) => console.log(result));
+// });
+
+//-----------------------------------------------------------------
+// let delays = [300, 200, 100, 150, 500];
+// const delay = (i, time) => new Promise((resolve) => setTimeout(() => resolve(i), time));
+
+// delays.sort((a, b) => a - b);
+// delays.forEach((d, i) => {
+//   delay(i, d).then((result) => console.log(result));
+// });
