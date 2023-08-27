@@ -1,0 +1,19 @@
+{
+  "name": "homework12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "homework12.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primaldarak/softserve-js-fundamentals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/primaldarak/softserve-js-fundamentals/issues"
+  },
+  "homepage": "https://github.com/primaldarak/softserve-js-fundamentals#readme"
+}
